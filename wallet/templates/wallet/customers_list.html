@@ -1,0 +1,30 @@
+<table>
+    <th>
+        <td>First-name</td>
+        <td>Age</td>
+        <td>Email</td>
+    </th>
+        {% for customer in customers}
+        <tr>
+            <td>{{customer.First_name}}</td>
+            <td>{{customer.Age}}</td>
+            <td>{{customer.Email}}</td>
+            <td>view profile</td>
+
+
+
+
+
+            
+
+
+
+        </tr>
+        {%endfor %}
+        <td><a href="{%url 'customers_profile' id =cutomer.id%}">profile</a></td>
+
+        
+
+    
+</table>
+
